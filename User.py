@@ -12,7 +12,6 @@ class User(QMainWindow, Ui_mainWindow):
 
         self.btnOK.setDisabled(True)
         self.txtEnter.textChanged.connect(self.checkEnter)
-
         self.btnOK.clicked.connect(self.saveDst)
 
     def checkEnter(self):
