@@ -9,33 +9,33 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(931, 763)
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
+class Ui_mainWindow(object):
+    def setupUi(self, mainWindow):
+        mainWindow.setObjectName("mainWindow")
+        mainWindow.resize(598, 300)
+        self.centralwidget = QtWidgets.QWidget(mainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(200, 90, 51, 31))
-        self.pushButton.setObjectName("pushButton")
-        self.plainTextEdit = QtWidgets.QPlainTextEdit(self.centralwidget)
-        self.plainTextEdit.setGeometry(QtCore.QRect(70, 90, 111, 31))
-        self.plainTextEdit.setObjectName("plainTextEdit")
-        self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(70, 60, 291, 17))
-        self.label.setObjectName("label")
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.btnOK = QtWidgets.QPushButton(self.centralwidget)
+        self.btnOK.setGeometry(QtCore.QRect(240, 70, 71, 32))
+        self.btnOK.setObjectName("btnOK")
+        self.edtEnter = QtWidgets.QPlainTextEdit(self.centralwidget)
+        self.edtEnter.setGeometry(QtCore.QRect(50, 70, 171, 31))
+        self.edtEnter.setObjectName("edtEnter")
+        self.lblEnter = QtWidgets.QLabel(self.centralwidget)
+        self.lblEnter.setGeometry(QtCore.QRect(50, 40, 271, 16))
+        self.lblEnter.setObjectName("lblEnter")
+        mainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(mainWindow)
         self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+        mainWindow.setStatusBar(self.statusbar)
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.retranslateUi(mainWindow)
+        QtCore.QMetaObject.connectSlotsByName(mainWindow)
 
-    def retranslateUi(self, MainWindow):
+    def retranslateUi(self, mainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.pushButton.setText(_translate("MainWindow", "OK"))
-        self.label.setText(_translate("MainWindow", "Please enter the destination number below:"))
+        mainWindow.setWindowTitle(_translate("mainWindow", "MainWindow"))
+        self.btnOK.setText(_translate("mainWindow", "OK"))
+        self.lblEnter.setText(_translate("mainWindow", "Please enter the destination number below:"))
 
 
