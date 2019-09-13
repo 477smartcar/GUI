@@ -16,13 +16,14 @@ class Ui_mainWindow(object):
         self.centralwidget = QtWidgets.QWidget(mainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.btnOK = QtWidgets.QPushButton(self.centralwidget)
-        self.btnOK.setGeometry(QtCore.QRect(250, 70, 71, 32))
+        self.btnOK.setGeometry(QtCore.QRect(320, 70, 81, 32))
+        self.btnOK.setMinimumSize(QtCore.QSize(81, 32))
         self.btnOK.setObjectName("btnOK")
         self.lblEnter = QtWidgets.QLabel(self.centralwidget)
-        self.lblEnter.setGeometry(QtCore.QRect(50, 40, 271, 16))
+        self.lblEnter.setGeometry(QtCore.QRect(50, 40, 261, 16))
         self.lblEnter.setObjectName("lblEnter")
         self.txtEnter = QtWidgets.QLineEdit(self.centralwidget)
-        self.txtEnter.setGeometry(QtCore.QRect(50, 70, 191, 31))
+        self.txtEnter.setGeometry(QtCore.QRect(50, 70, 261, 31))
         self.txtEnter.setObjectName("txtEnter")
         mainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(mainWindow)
@@ -36,6 +37,6 @@ class Ui_mainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         mainWindow.setWindowTitle(_translate("mainWindow", "MainWindow"))
         self.btnOK.setText(_translate("mainWindow", "OK"))
-        self.lblEnter.setText(_translate("mainWindow", "Please enter the destination number below:"))
+        self.lblEnter.setText(_translate("mainWindow", "Please enter a destination number below:"))
 
 

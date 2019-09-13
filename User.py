@@ -18,7 +18,11 @@ class User(QMainWindow, Ui_mainWindow):
         self.btnOK.setEnabled(True) if self.txtEnter.text() != "" else self.btnOK.setDisabled(True)
 
     def saveDst(self):
-        User.dstNum = int(self.txtEnter.text())
+        try:
+            User.dstNum = int(self.txtEnter.text()) if 1 <= int(self.txtEnter.text()) <= 3 \
+                else self.txtEnter.setText("Must be an integer between 1 and 3")
+        except ValueError:
+            self.txtEnter.setText("Must be an integer between 1 and 3")
 
 
 if __name__ == "__main__":
